@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>ChanInKou Website</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="js/jquery.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- navbar that set a box to the top and make it black-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="top-bar">
+		<!-- creating a container that contain header-->
+		<div class="container">
+			<!-- creating header-->
+			<div class="navbar-header">
+				<!-- Creating a button with collapse to for phone user where they want to collapse it, the icon-bar is how many line you want-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-id">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button><!-- End button -->
+				<!-- Creating your logo-->
+				<a href="" class="navbar-brand">MK</a>
+			</div><!-- End header -->
+			
+			<!-- Short out to search stuff-->
+			<div class="collapse navbar-collapse" id="searches">
+				<!-- navbar will line the button to the right place, and navbar-right will make it to the right-->
+				<a href = "otherfile/ChanInKouResume2017.pdf" class = "btn btn-info navbar-btn navbar-right">Download Resume</a>
+				<!-- Making different button that could lead to an area you want in the website without scrolling -->
+				<ul class="nav navbar-nav">
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#project">My Project</a></li>
+					<li><a href="#contact">Contact Info</a></li>
+					<li><a href="#quote">Quote of the day</a></li>
+				</ul>
+			</div><!-- End of searches-->
+		</div><!-- End of container-->
+	</nav><!-- End of nav-->
+	
+<!-- A gray box that is center in the middle to display stuff-->
+	<div class ="jumbotron">
+		<!-- A container that have stuff in the center-->
+		<div class ="container text-center">
+			<h2>Welcome!!</h2>
+			<p>This site is under construction!</p>
+			<div class = "col-lg-4">
+				<img src ="pictures/ChanInKou_Photo.jpg" class ="img-responsive" alt "My selfie">
+			</div>
+		</div><!-- End of container-->
+	</div><!-- End of jumbotron-->
+	
+	
+<!-- About me -->
+	<!-- container will line up everything -->
+	<div class ="container">
+		<section>
+		
+			<div class="page-header" id="aboutme">
+				<h3>A little about me: <small>(Some volunteering work I did)</small></h3>
+			</div>
+			
+			<!-- carousel slide will let you create the carousel, -->
+			<div class="carousel slide" id ="pictures" data-ride = "carousel">
+			
+				<!-- if there are 4 pictures, just put 0-4, class = active since it starts from the first picture-->
+				<ol class="carousel-indicators">
+					<li data-target = "#pictures" data-slide-to="0" class = "active"></li>
+					<li data-target = "#pictures" data-slide-to="1"></li>
+					<li data-target = "#pictures" data-slide-to="2"></li>
+					<li data-target = "#pictures" data-slide-to="3"></li>
+				</ol>
+				
+				<!-- uploading image -->
+				<div class = "carousel-inner">
+				
+					<!-- have to be item active since it's the first picture -->
+					<div class = "item active">
+						<img src = "pictures/cleaningupgrass.jpg" alt="cleaning grass">
+						<!-- comment on pictures-->
+						<div class = "carousel-caption">
+							<h3>Park clean up</h3>
+							<p>Cleaning up grass with shovel</p>
+						</div>
+					</div>
+					
+					<div class = "item">
+						<img src = "pictures/picking-up-trash.jpg" alt="picking up trash">
+						<!-- comment on pictures-->
+						<div class = "carousel-caption">
+							<h3>Another park clean up</h3>
+							<p>Picking up any trash that was on the ground</p>
+						</div>
+					</div>
+					
+					<div class = "item">
+						<img src = "pictures/raining-working.jpg" alt="working in rain">
+						<!-- comment on pictures-->
+						<div class = "carousel-caption">
+							<h3>Santa Monica volunteer</h3>
+							<p>We passed out water even though it was rainning</p>
+						</div>
+					</div>
+					
+					<div class = "item">
+						<img src = "pictures/setting-up-cup.jpg" alt="setting up cups">
+						<!-- comment on pictures-->
+						<div class = "carousel-caption">
+							<h3>Santa Monica volunteer</h3>
+							<p>Woke up at 4am to set up tables and cups</p>
+						</div>
+					</div>
+					
+				</div><!-- End carousel inner-->
+				
+				<!-- creating the left arrow using commponents from bootstrap -->
+				<a href ="#pictures" class = "left carousel-control" data-slide="prev">
+					<span class="glyphicon glyphicon-hand-left"></span>
+				</a>
+				
+				<!-- creating the right arrow using commponents from bootstrap -->
+				<a href ="#pictures" class = "right carousel-control" data-slide="next">
+					<span class="glyphicon glyphicon-hand-right"></span>
+				</a>
+				
+			</div><!-- End carousel slide -->
+			
+		</section><!-- End section -->
+		
+	</div><!-- End container -->
+	
+<!-- my project -->
+	<div class = "container">
+		<section>
+			<div class="page-header" id="project">
+				<h1>My project: <small>(Fun project that I did)</small></h1>
+			</div> <!-- End page-header -->
+			
+			<div class = "row">
+				<div class = "col-lg-8">
+					<h3>Multiplication reverse table</h3>
+					<p>Wow, this is cool</p>
+					
+					<!-- making a little box -->
+					<div class = "row">
+						<div class = "col-lg-4">
+							<div class = "panel panel-default text-center">
+								<div class = "panel-body">
+									<span class = "glyphicon glyphicon-save-file"> </span>
+										<!-- Button that could download pdf or jar using btn-->
+										<div class ="btn-group-sm">
+											<a href = "projects/ReverseMultiplicationTable.jar" class="btn btn-lg btn-default">Download Game</a>
+										</div>
+									<p>Please download the jar file to see how it works.</p>
+								</div>
+							</div>
+						</div>
+					</div><!-- End little box -->
+					
+				</div><!-- End col-lg-8 -->
+				
+				<!-- picture -->
+				<div class = "col-lg-4">
+					<img src ="pictures/reverseMultiplicationPicture.png" class ="img-responsive" alt "image on multiplication table">
+				</div>
+				
+			</div><!-- End row -->
+			
+		</section><!-- End section -->
+		
+	</div><!-- End container -->
+	
+<!-- This is my quote of the day section -->
+	<div class="container">
+		<section>
+			<div class="page-header" id="quote">
+				<h3>Quotes of the day: <small>(Something that I made up)</small></h3>
+			</div>
+			
+			<div class="row">
+				<div class = "col-lg-6">
+					<blockquote>
+						<p>"It's never too early to not give up"</p>
+						<footer>Chan In Kou</footer>
+					</blockquote>
+				</div>
+				<div class = "col-lg-6">
+					<blockquote>
+						<p>"Code early and sleep later"</p>
+						<footer>Chan In Kou</footer>
+					</blockquote>
+				</div>
+			</div>
+			<hr>
+		</section>
+	</div>	
+	
+<!-- Contact info-->
+	<div class ="container">
+		<section>
+		
+			<div class="page-header" id="contact">
+				<h3>How to contact me: <small>(You could email me anytime!)</small></h3>
+			</div><!-- End header -->
+			
+			<!-- 8 + 4 is 12 so its the default-->
+			<div class = "row">
+				<div class = "col-lg-4">
+					<p>Contact me with the email below</p>
+					<strong>michaelkoulove@yahoo.com</strong>
+				</div>
+				
+				<div class = "col-lg-8">
+				
+				</div>
+			</div>
+		</section>
+	</div>
+	
+<!-- Footer for the end -->
+	<footer>
+		<hr>
+			<div class = "container text-center">
+				<section>
+					<div class = "well">
+							<h2>Currently looking for an intership and someone to work with a project together</h3>
+							<p>michaelkoulove@yahoo.com</p>
+					</div>
+				</section><!-- End section-->
+				
+				<ul class = "list-inline">
+					<li><a href="https://github.com/chaninkou">GitHub</a></li>
+					<li><a href="https://www.linkedin.com/in/chaninkou/">Linkdin</a></li>
+				</ul>
+				
+				<!-- copyright -->
+				<p>&copy; Chan In Kou. All rights reserved</p>
+				
+			</div>
+			
+	</footer><!-- End footer -->
+	
+</body>
+</html>
