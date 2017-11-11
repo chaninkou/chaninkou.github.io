@@ -37,6 +37,7 @@
 					<li><a href="#project">My Project</a></li>
 					<li><a href="#contact">Contact Info</a></li>
 					<li><a href="#quote">Quote of the day</a></li>
+					<li><a href="#activities">Activities</a></li>
 				</ul>
 			</div><!-- End of searches-->
 		</div><!-- End of container-->
@@ -53,7 +54,7 @@
 			<h1>Welcome to my website!</h1>
 			<p>My name is Chan In Kou and I'm currently</p>
 			<p>a third year Computer Science student at</p>
-			<p>Cal State LA.
+			<p>Cal State LA.</p>
 			</div>
 			
 		</div><!-- End of container-->
@@ -62,7 +63,7 @@
 	
 <!-- About me -->
 	<!-- container will line up everything -->
-	<div class ="container">
+	<div class ="container" id="aboutme">
 		<section>
 		
 			<div class="page-header" id="aboutme">
@@ -141,7 +142,7 @@
 	
 	
 <!-- my project -->
-	<div class = "container">
+	<div class = "container" id="project">
 		<section>
 			<div class="page-header" id="project">
 				<h1>My project: <small>(Fun project that I did)</small></h1>
@@ -326,7 +327,7 @@
 	</div><!-- End container -->
 	
 <!-- This is my quote of the day section -->
-	<div class="container">
+	<div class="container" id="quote">
 		<section>
 			<div class="page-header" id="quote">
 				<h3>Quotes of the day: <small>(Something that I made up)</small></h3>
@@ -350,21 +351,65 @@
 		</section>
 	</div>	
 	
-<!-- This is my quote of the day section -->
-	<div class="container">
+<!-- This is my activities of the day section -->
+	<div class="container" id="activities">
 		<section>
-			<div class="page-header" id="quote">
+			<div class="page-header" id="activities">
 				<h3>Activities:</h3>
 			</div>
-			
-			<div class="row">
-				<div class = "col-lg-6">
-					<blockquote>
-						<p>"Basketball"</p>
-					</blockquote>
-				</div>
-			</div>
-			<hr>
+			<h3>EMHS Basketball</h3>
+			<div class="carousel-inner" role="listbox" style=" width:50%; height: 50 !important;">
+				<!-- carousel slide will let you create the carousel, -->
+				<div class="carousel slide" id ="pictureSport" data-ride = "carousel">
+					
+					<!-- if there are 4 pictures, just put 0-4, class = active since it starts from the first picture-->
+					<ol class="carousel-indicators">
+						<li data-target = "#pictureSport" data-slide-to="0" class = "active"></li>
+						<li data-target = "#pictureSport" data-slide-to="1"></li>
+						<li data-target = "#pictureSport" data-slide-to="2"></li>
+					</ol>
+					
+					<!-- uploading image -->
+					<div class = "carousel-inner">
+						<!-- have to be item active since it's the first picture -->
+						<div class = "item active">
+							<img src = "pictures/jvteam.jpg" alt="Jv basketball team">
+							<!-- comment on pictures-->
+							<div class = "carousel-caption">
+								<h3>Jv basketball team"</h3>
+							</div>
+						</div>
+						
+						<div class = "item">
+							<img src = "pictures/freshmanTeam.jpg" alt="freshman basketball team">
+							<!-- comment on pictures-->
+							<div class = "carousel-caption">
+								<h3>Freshman basketball team</h3>
+							</div>
+						</div>
+						
+						<div class = "item">
+							<img src = "pictures/yearbookPicture.jpg" alt="Picture in yearbook">
+							<!-- comment on pictures-->
+							<div class = "carousel-caption">
+								<h3>Picture in yearbook</h3>
+							</div>
+						</div>
+						
+					</div><!-- End carousel inner-->
+					
+					<!-- creating the left arrow using commponents from bootstrap -->
+					<a href ="#pictureSport" class = "left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-hand-left"></span>
+					</a>
+					
+					<!-- creating the right arrow using commponents from bootstrap -->
+					<a href ="#pictureSport" class = "right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-hand-right"></span>
+					</a>
+					
+				</div><!-- End carousel slide -->
+			</div><!-- End carousel inner -->
 		</section>
 	</div>		
 	
