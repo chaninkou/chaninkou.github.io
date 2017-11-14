@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	   <title>HTML Form</title>
+	   <style>
+			body {
+				background-color: #452F5C;
+			}
+			form {
+				width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				background-color: #AB3E56;
+			}
+			header {
+				background-color: #E2E42A;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				width: 80%;
+				font-size:300%;
+			}
+			label {
+				font-size: 150%;
+				font-weight: 800;
+			}			
+			legend {
+			font-size :150%;
+			}
+	   </style>
+   </head>
+   <body>
+	   <header>
+			<h2>Fun School Survey</h2>
+	   </header>
+	   <section>
+		   <form name = "myForm" id = "myForm" method="post" action = "http://webdevfoundations.net/scripts/formdemo.asp">
+			   <fieldset>
+				   <legend>
+						This will improve our school
+				   </legend>
+				   <table>
+					   <tr>
+							<td>
+							<label for "StudentName">Your Full Name:</label>
+							<input type="text"  name="StudentName"  id="StudentName" />
+							</td>
+							
+							<td>
+							<label for "Your password">Password</label>
+							<input type="password" name="Your password" id="Your password"/>
+							</td>
+							
+							<td>
+							<label for "Age">Your Age:</label>
+							<input type="number"  name="Age"  id="Age" min = "0" max = "100" />
+							<br />
+							</td>
+							
+							<td>
+							<label for "Email">Personal Email:</label>
+							<input type="email" name="Email"  id="Email" placeholder="jrsgjw@example.com" />
+							</td>
+					   </tr>
+					   <tr>
+							<td colspan = "2"><label for "sports">Which sport do you like?(you may pick more than one)</label>
+							<input type="checkbox" name="sports" value="basketball">
+							basketball
+							<input type="checkbox" name="sports" value="football">
+							football
+							<input type="checkbox" name="sports" value="football">
+							soccer </td>
+							
+							<td colspan = "2"><label for "grade">Grade:</label>
+							<input type="radio" name="grade" value="Freshman">
+							Freshman
+							<input type="radio" name="grade" value="Sophomore">
+							Sophomore
+							<input type="radio" name="grade" value="Junior">
+							Junior
+							<input type="radio" name="grade" value="Senior">
+							Senior </td>
+					   </tr>
+				   </table>
+			   </fieldset>
+			   <fieldset>
+				   <legend>
+						Which one is the best color??
+				   </legend>
+		           <label for "color">Pick:</label>
+						   <select name = "color" id = "color">
+								<option value = "blue">Blue</option>
+								<option value = "red" >Red</option>
+								<option value = "yellow">Yellow</option>
+								<option value = "green" >Green</option>
+								<option value = "purple">Purple</option>
+								<option value = "orange" >Orange</option>
+								<option value = "pink" >Pink</option>
+								<option value = "white" >White</option>
+								<option value = "black" >Black</option>
+								<option value = "gray" >Gray</option>
+						   </select>
+			   </fieldset>
+				<input type = "hidden" name = "Your lucky number" value = "21" />
+				<input type="Submit" />
+				<input type="reset" />
+		   </form>
+	   </section>
+   </body>
+</html>
