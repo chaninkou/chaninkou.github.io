@@ -2,6 +2,19 @@ body{
 	padding-top:50px;
 }
 
+.my-navbar {
+	background: #3498db;
+	border-radius: 0;
+	border: 0;
+}
+
+.my-navbar .navbar-brand{
+	color: white;
+}
+
+.my-navbar .navbar-nav li a{
+	color: white;
+}
 
 
 
