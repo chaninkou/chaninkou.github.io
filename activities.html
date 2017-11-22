@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chan In Kou Website</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" type ="image/png" href="pictures/favicon.png">
+</head>
+
+<body>
+
+<!-- navbar that set a box to the top and make it black-->
+	<nav class="my-navbar navbar navbar-inverse navbar-fixed-top" id="top-bar">
+		<!-- creating a container that contain header-->
+		<div class="container">
+			<!-- creating header-->
+			<div class="navbar-header">
+				<!-- Creating a button with collapse to for phone user where they want to collapse it, the icon-bar is how many line you want-->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-id">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button><!-- End button -->
+				<!-- Creating your logo-->
+				<a href="" class="navbar-brand">MK</a>
+			</div><!-- End header -->
+			
+			<!-- Short out to search stuff-->
+			<div class="collapse navbar-collapse" id="searches">
+				<!-- navbar will line the button to the right place, and navbar-right will make it to the right-->
+				<a href = "otherfile/ChanInKouResume2017.pdf" class = "btn btn-info navbar-btn navbar-right">Download Resume</a>
+				<!-- Making different button that could lead to an area you want in the website without scrolling -->
+				<ul class="nav navbar-nav">
+					<li><a href="index.html#aboutme">About Me</a></li>
+					<li><a href="index.html#project">My Project</a></li>
+					<li><a href="contact.html">Contact Info</a></li>
+					<li><a href="index.html#quote">Quote of the day</a></li>
+					<li><a href="index.html#activities">Activities</a></li>
+					<li><a href="completedCourse.html">Completed Courses</a></li>
+				</ul>
+			</div><!-- End of searches-->
+		</div><!-- End of container-->
+	</nav><!-- End of nav-->
+<!-- This is my activities of the day section -->
+	<div class="container" id="activities">
+		<section>
+			<div class="page-header" id="activities">
+				<h1>Activities:</h1>
+			</div>
+			<h3>El Monte High School Basketball</h3>
+			<div class="carousel-inner" role="listbox" style=" width:50%; height: 50 !important;">
+				<!-- carousel slide will let you create the carousel, -->
+				<div class="carousel slide" id ="pictureSport" data-ride = "carousel">
+					
+					<!-- if there are 4 pictures, just put 0-4, class = active since it starts from the first picture-->
+					<ol class="carousel-indicators">
+						<li data-target = "#pictureSport" data-slide-to="0" class = "active"></li>
+						<li data-target = "#pictureSport" data-slide-to="1"></li>
+						<li data-target = "#pictureSport" data-slide-to="2"></li>
+					</ol>
+					
+					<!-- uploading image -->
+					<div class = "carousel-inner">
+						<!-- have to be item active since it's the first picture -->
+						<div class = "item active">
+							<img src = "pictures/jvteam.jpg" alt="Jv basketball team">
+							<!-- comment on pictures-->
+							<div class = "carousel-caption">
+								<h3>Jv basketball team"</h3>
+							</div>
+						</div>
+						
+						<div class = "item">
+							<img src = "pictures/freshmanTeam.jpg" alt="Freshman basketball team">
+							<!-- comment on pictures-->
+							<div class = "carousel-caption">
+								<h3>Freshman basketball team</h3>
+							</div>
+						</div>
+						
+						<div class = "item">
+							<img src = "pictures/yearbookPicture.jpg" alt="Picture in yearbook">
+							<!-- comment on pictures-->
+							<div class = "carousel-caption">
+								<h3>Picture in yearbook</h3>
+							</div>
+						</div>
+						
+					</div><!-- End carousel inner-->
+					
+					<!-- creating the left arrow using commponents from bootstrap -->
+					<a href ="#pictureSport" class = "left carousel-control" data-slide="prev">
+						<span class="glyphicon glyphicon-hand-left"></span>
+					</a>
+					
+					<!-- creating the right arrow using commponents from bootstrap -->
+					<a href ="#pictureSport" class = "right carousel-control" data-slide="next">
+						<span class="glyphicon glyphicon-hand-right"></span>
+					</a>
+					
+				</div><!-- End carousel slide -->
+			</div><!-- End carousel inner -->
+		</section>
+	</div>		
+	
+<!-- Footer for the end -->
+	<footer>
+		<hr>
+			<div class = "container text-center">
+				<section>
+					<div class = "well">
+							<h2>Open to collaborating on new projects</h3>
+							<p>Email <b>michaelkoulove@yahoo.com</b> for more information</p>
+					</div>
+				</section><!-- End section-->
+				
+				<ul class = "list-inline">
+					<li><a href="https://www.chanincode.tk" onclick="window.open('https://github.com/chaninkou')">GitHub</a></li>
+					<li><a href="https://www.chanincode.tk" onclick="window.open('https://www.linkedin.com/in/chaninkou/')">Linkedin</a></li>
+				</ul>
+				
+				<!-- copyright -->
+				<p>&copy; Chan In Kou. All rights reserved</p>
+				
+			</div>
+			
+	</footer><!-- End footer -->
+	
+<!-- script -->	
+	<script src= "js/jquery.min.js"></script>
+	<script src = "js/bootstrap.min.js"></script>
+	
+</body>
+</html>
