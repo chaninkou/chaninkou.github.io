@@ -10,8 +10,7 @@
 </head>
 
 <body>
-
-<!-- navbar that set a box to the top and make it black-->
+	<!-- navbar that set a box to the top and make it black-->
 	<nav class="my-navbar navbar navbar-inverse navbar-fixed-top" id="top-bar">
 		<!-- creating a container that contain header-->
 		<div class="container">
@@ -44,11 +43,9 @@
 			</div><!-- End of searches-->
 		</div><!-- End of container-->
 	</nav><!-- End of nav-->
-
 	
-<!-- A gray box that is center in the middle to display stuff-->
-	<div class ="jumbotron">
-		<div class = "dropdown">
+	<div id = "sidebar">
+		<div class = "dropdown" id = "dropbox">
 			<button class = "btn btn-default dropdown-toggle" data-toggle= "dropdown" type = "button">Menu <span class = "caret"></span></button>
 				<ul class = "dropdown-menu">
 					<li class = "dropdown-header">Testing new menu list</li>
@@ -66,6 +63,16 @@
 					</ul>
 				</ul>
 		</div>
+		<div id = "sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	
+
+<!-- A gray box that is center in the middle to display stuff-->
+	<div class ="jumbotron">
 		<!-- A container that h	ave stuff in the center-->
 		<div class ="container">
 			<div class = "col-lg-4">
@@ -454,6 +461,12 @@
 <!-- script -->	
 	<script src= "js/jquery.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
-	
+	<script>
+	$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+	</script>
 </body>
 </html>

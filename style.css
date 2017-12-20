@@ -16,5 +16,57 @@ body{
 	color: white;
 }
 
+#dropbox {
+	background:#151718;
+	width:200px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left:0px;
+	top:10%;
+}
+
+#sidebar{
+	background:#151718;
+	width:200px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left:-200px;
+	top:0px;
+	transition: left 0.3s linear;
+}
+
+#sidebar.visible{
+	left:0px;
+	transition: left 0.3s linear;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin: 60px;
+	position:absolute;
+	top:0px;
+	right:-90px;
+}
+
+#sidebar-btn span{
+	height:1px;
+	background: #111;
+	margin-bottom:5px;
+	display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+
+#sidebar-btn span:nth-child(2){
+	width:50%;
+}
 
 
