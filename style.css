@@ -69,15 +69,27 @@ body{
 	width:50%;
 }
 
-#sidebarstyle {
-	height:15px;
-	margin:10px;
-	background:#1C1E1F;
-	color: #ccc;
-	border-bottom: 1px solid #111;
-	display:block;
-	width:180px;
-	padding:10px;
+
+#sidebarstyle ul{
+	margin: 50px;
+	margin-left: 0px;
+	padding:0px;
 }
+
+#sidebarstyle ul li{
+	list-style:none;
+}
+
+#sidebarstyle ul li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display: block;
+	width:200px;
+	padding:10px;
+	text-decoration: none;
+}
+
+
 
 
