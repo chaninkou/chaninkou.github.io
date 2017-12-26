@@ -44,6 +44,7 @@
 		</div><!-- End of container-->
 	</nav><!-- End of nav-->
 	
+	<!--Making a sidebar instead of showing a menu at the top -->
 	<div id = "sidebar">
 		<!-- Need to make the dropbox pop out
 		<div class = "dropdown" id = "dropbox">
@@ -65,7 +66,7 @@
 				</ul>
 		</div> -->
 			<div  id = "sidebarstyle">
-			<ul>
+				<ul>
 					<li><a href="index.html">Home</a></li>		
 					<li><a href="#aboutme">About</a></li>
 					<li><a href="#project">Project</a></li>
@@ -73,13 +74,13 @@
 					<li><a href="activities.html">Activities</a></li>
 					<li><a href="quote.html">Quote</a></li>
 					<li><a href="contact.html">Contact</a></li>
-			</ul>
+				</ul>
 			</div>
 			<div>
-			<ul class = "pager" id = "pagerStyle">
-				<li class = "previous"><a href = "index.html">Previous</a></li>
-				<li class = "next"><a href = "completedCourse.html">Next</a></li>
-			</ul>
+				<ul class = "pager" id = "pagerStyle">
+					<li class = "previous"><a href = "index.html">Previous</a></li>
+					<li class = "next"><a href = "completedCourse.html">Next</a></li>
+				</ul>
 			</div>
 		
 		<div id = "sidebar-btn">
@@ -482,6 +483,7 @@
 <!-- script -->	
 	<script src= "js/jquery.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
+	<!-- This is the script that let user to click on the top left at the home page-->
 	<script>
 	$(document).ready(function(){
 		$('#sidebar-btn').click(function(){
