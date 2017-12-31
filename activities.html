@@ -44,6 +44,34 @@
 			</div><!-- End of searches-->
 		</div><!-- End of container-->
 	</nav><!-- End of nav-->
+	
+	<!--Making a sidebar instead of showing a menu at the top -->
+	<div id = "sidebar">
+			<div  id = "sidebarstyle">
+				<ul>
+					<li><a href="index.html">Home</a></li>		
+					<li><a href="#aboutme">About</a></li>
+					<li><a href="#project">Project</a></li>
+					<li><a href="completedCourse.html">Completed Courses</a></li>
+					<li><a href="activities.html">Activities</a></li>
+					<li><a href="quote.html">Quote</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+			<!-- This is for next page or previous page-->
+			<div>
+				<ul class = "pager" id = "pagerStyle">
+					<li class = "previous"><a href = "completedCourse.html">Previous</a></li>
+					<li class = "next"><a href = "quote.html">Next</a></li>
+				</ul>
+			</div>
+		
+		<div id = "sidebar-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div><!--End of sidebar -->
 <!-- This is my activities of the day section -->
 	<div class="container" id="activities">
 		<section>
@@ -140,6 +168,14 @@
 <!-- script -->	
 	<script src= "js/jquery.min.js"></script>
 	<script src = "js/bootstrap.min.js"></script>
+	<!-- This is the script that let user to click on the top left at the home page-->
+	<script>
+	$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+	</script>
 	
 </body>
 </html>
