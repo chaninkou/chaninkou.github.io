@@ -16,6 +16,7 @@ body{
 	color: white;
 }
 
+/*Dropbox's style(only shows in laptop)*/
 #dropbox {
 	background:#151718;
 	width:200px;
@@ -26,6 +27,7 @@ body{
 	top:10%;
 }
 
+/* The sidebar's style where there is boxes(only shows in laptop)*/
 #sidebar{
 	background:#151718;
 	width:200px;
