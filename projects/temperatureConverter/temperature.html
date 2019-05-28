@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <div align = "center">
+        <header>
+            <h1>Temperature Converter</h1>
+        </header>
+
+        <form name = "myForm" id = "myForm">
+            <label>Enter the temperature to be converted</label>
+        
+            <div id="myinput">
+                <input type="text" name="myinput" placeholder="ENTER NUMBER"/>
+            </div>
+        
+            <div id = "fahrenheit">
+                <label>fahrenheit</label>
+                <input type="radio"  name ="temperature" value = "fa">
+            </div>
+        
+            <div id = "celsius">
+                <label>celsius</label>
+                <input type="radio" name ="temperature" value = "ce">
+            </div>
+        </form>
+
+        <div id = "convert">
+            <button>Convert</button>
+        </div>
+        
+        <hr>
+            <u>Message: </u>
+            <p id = "solution"></p>
+        <hr>
+    </div>
+    
+
+    <script src = "temperature.js"></script>
+</body>
+</html>
