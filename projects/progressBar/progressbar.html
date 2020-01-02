@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A Loading Bar</title>
+</head>
+<body>
+    <div class = "loading-bar-container">
+        <div class = "bar-fill" />
+    </div>
+
+    <button onclick="barFilling(3)">
+        Push
+    </button>
+
+    <script>
+        function barFilling(second){
+            
+            const bar = document.querySelector('.bar-fill');
+
+            let currentPercent = 0;
+
+            const interval = setInterval(() => {
+                bar.style.width = currentPercent + '%';
+                currentPercent = currentPercent + 1;
+
+                if(currentPercent >= 101){
+                    clearInterval(interval);
+                }
+
+            }, (second * 1000) / 100)
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: white
+        }
+        .loading-bar-container {
+            width: 300px;
+            height: 30px;
+            margin: 100px;
+            background-color: grey;
+        }
+        .bar-fill {
+            background-color: lightgreen;
+            height: 100%;
+            width: 0%;
+        }
+
+    </style>
+</body>
+</html>
